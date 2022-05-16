@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+    <PropertyGroup>
+        <TargetFramework>net6.0</TargetFramework>
+        <Nullable>enable</Nullable>
+        <ImplicitUsings>enable</ImplicitUsings>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="Autofac" Version="6.3.0" />
+        <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="7.2.0" />
+        <PackageReference Include="PlaygroundShared.Api" Version="1.0.11" />
+        <PackageReference Include="PlaygroundShared.Application" Version="1.0.11" />
+        <PackageReference Include="PlaygroundShared.Infrastructure.Core" Version="1.0.11" />
+        <PackageReference Include="PlaygroundShared.Infrastructure.MongoDb" Version="1.0.11" />
+        <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\CRUD.Application\CRUD.Application.csproj" />
+      <ProjectReference Include="..\CRUD.Infrastructure.MongoDb\CRUD.Infrastructure.MongoDb.csproj" />
+      <ProjectReference Include="..\CRUD.Infrastructure.Persistence\CRUD.Infrastructure.Persistence.csproj" />
+    </ItemGroup>
+
+</Project>
